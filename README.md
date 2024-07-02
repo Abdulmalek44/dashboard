@@ -25,7 +25,7 @@ This is a dashboard application built with React JS and Syncfusion Tailwind CSS.
 - Syncfusion Tailwind CSS: Customizable CSS framework for modern web development
 
 
-Project Link: [Apple Store](https://abdulmalek44.github.io/ecommerce)
+Project Link: [Shoppy Dashboard](https://abdulmalek44.github.io/ecommerce)
 
 For setup instructions and more details,You can learn more in the [Create React App documentation](https://create-react-app.dev/docs/getting-started).
 
