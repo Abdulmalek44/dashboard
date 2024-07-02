@@ -1,27 +1,32 @@
-# React + TypeScript + Vite
+# `Shoppy Dashboard`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a dashboard application built with React JS and Syncfusion Tailwind CSS. The app features pages for managing customer orders and employee information, along with integrated apps such as a calendar, color picker, editor, and Kanban board. All data, including charts, is dynamically sourced from arrays within the application.
 
-Currently, two official plugins are available:
+## Features
+- Manage customer orders and employee details efficiently
+- Integrated apps:
+  - Calendar
+  - Color Picker
+  - Editor
+  - Kanban
+- Dynamic charts including:
+  - Pie Charts
+  - Bar Charts
+  - Area Charts
+  - Financial Charts
+  - Color-Mapping Charts
+  - Pyramid Charts
+  - Stacked Charts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### `Technologies Used`: 
+- React.js: JavaScript library for building user interfaces
+- TypeScript: A strongly typed programming language that builds on JavaScript
+- Tailwind CSS: Utility-first CSS framework for styling
+- Syncfusion Tailwind CSS: Customizable CSS framework for modern web development
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Project Link: [Apple Store](https://abdulmalek44.github.io/ecommerce)
 
-- Configure the top-level `parserOptions` property like this:
+For setup instructions and more details,You can learn more in the [Create React App documentation](https://create-react-app.dev/docs/getting-started).
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
