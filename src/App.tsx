@@ -1,35 +1,52 @@
-import { Route, Routes } from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import './App.css';
-import { FiSettings } from 'react-icons/fi';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import { Calendar, ColorPicker, Customers, Ecommerce, Editor, Employees, Kanban, Orders } from './Pages';
-import { Area, Bar, ColorMapping, Financial, Line, Pie, Pyramid, Stacked } from './Pages/Charts';
-import { Navbar, Sidebar, ThemeSettings } from './Components';
+import {FiSettings} from 'react-icons/fi';
+import {TooltipComponent} from '@syncfusion/ej2-react-popups';
+import {
+  Calendar,
+  ColorPicker,
+  Customers,
+  Ecommerce,
+  Editor,
+  Employees,
+  Kanban,
+  Orders,
+} from './Pages';
+import {
+  Area,
+  Bar,
+  ColorMapping,
+  Financial,
+  Line,
+  Pie,
+  Pyramid,
+  Stacked,
+} from './Pages/Charts';
+import {Navbar, Sidebar, ThemeSettings} from './Components';
 import useStateContext from './Context/useStateContext';
 
-
-
 const App = () => {
-
-  const { activeMenu, currentColor, themeSettings, setThemeSettings, currentMode } = useStateContext();
+  const {
+    activeMenu,
+    currentColor,
+    themeSettings,
+    setThemeSettings,
+    currentMode,
+  } = useStateContext();
 
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <div className="flex relative dark:bg-main-dark-bg">
-        <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
-          <TooltipComponent
-            content="Settings"
-            position="TopCenter"
-          >
+        <div className="fixed right-4 bottom-4" style={{zIndex: '1000'}}>
+          <TooltipComponent content="Settings" position="TopCenter">
             <button
               type="button"
               onClick={() => setThemeSettings(true)}
-              style={{ background: currentColor, borderRadius: '50%' }}
+              style={{background: currentColor, borderRadius: '50%'}}
               className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
             >
               <FiSettings />
             </button>
-
           </TooltipComponent>
         </div>
         {activeMenu ? (
@@ -52,13 +69,13 @@ const App = () => {
             <Navbar />
           </div>
           <div>
-            {themeSettings && (<ThemeSettings />)}
+            {themeSettings && <ThemeSettings />}
 
             <Routes>
               {/* dashboard  */}
-              <Route path='/' element={<Ecommerce />} />
-              <Route path='/dashboard' element={<Ecommerce />} />
-              <Route path='/ecommerce' element={<Ecommerce />} />
+              <Route path="/" element={<Ecommerce />} />
+              <Route path="/dashboard" element={<Ecommerce />} />
+              <Route path="/ecommerce" element={<Ecommerce />} />
 
               {/* pages  */}
               <Route path="/orders" element={<Orders />} />
@@ -85,7 +102,7 @@ const App = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
