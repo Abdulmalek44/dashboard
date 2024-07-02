@@ -1,6 +1,6 @@
 # `Shoppy Dashboard`
 
-This is a dashboard application built with React JS and Syncfusion Tailwind CSS. The app features pages for managing customer orders and employee information, along with integrated apps such as a calendar, color picker, editor, and Kanban board. All data, including charts, is dynamically sourced from arrays within the application.
+This is a dashboard application built with React JS,  Syncfusion and Tailwind CSS. The app features pages for managing customer orders and employee information, along with integrated apps such as a calendar, color picker, editor, and Kanban board. All data, including charts, is dynamically sourced from arrays within the application.
 
 ## Features
 - Manage customer orders and employee details efficiently
